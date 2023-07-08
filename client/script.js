@@ -104,7 +104,7 @@ const handleSubmit = async (event) => {
     const err = await response.text();
 
     messageDiv.innerHTML = "Oops! Something went wrong 🤦🏻‍♂️"
-    alert('Too many requests: Server is busy at the moment, Please try again later', err);
+    alert('Too many requests: Out of API calls. Try again in a while', err);
   }
 };
 
